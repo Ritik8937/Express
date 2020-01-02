@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: express-new
+
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: express-new
+  template:
+    metadata:
+      labels:
+        app: express-new
+    spec:
+      containers:
+      - name: express-new
+        image: 8937960489/firstrepo:expressnew
+        ports:
+        - containerPort: 3000
