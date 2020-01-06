@@ -27,7 +27,7 @@ we can see the port number by using command,
     $ sudo docker ps
 
 Now, we can check our Express Application are and running or not, 
-for this open browser and give address http://localhost:<port-number>
+for this open browser and give address http://localhost: <port-number>
  
 
 Then we have to deploy this application on Kubernetes cluster. After setting up the Kubernetes cluster with kubeadm, create a deployment for this Express Applicatiom on master node.
